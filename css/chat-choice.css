@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-style: 12px;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.wrap {
+  position: absolute;
+  top: 0;
+  width: 7.5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-image: url('../images/u48.png');
+  width: 7.5rem;
+  height: 1.27rem;
+  flex-shrink: 0;
+}
+header > div {
+  width: 6.5rem;
+  margin: 0.5rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+header > div a:first-child img {
+  display: block;
+  width: 0.35rem;
+  height: 0.35rem;
+}
+header > div a {
+  display: block;
+  font-size: 0.26rem;
+  color: #00765d;
+}
+.main {
+  width: 7.5rem;
+  height: 100%;
+  overflow: auto;
+  height: calc(100% - 50px);
+}
+.main .main-content {
+  height: 100%;
+  width: 7.5rem;
+  overflow: auto;
+  background-color: #c1c1c1;
+}
+.main .main-content > .man {
+  margin-left: 0.5rem;
+}
+.main .main-content > .man > li span {
+  display: block;
+  font-size: 0.16rem;
+  color: #9c9e9e;
+  margin: 0.3rem 0 0 2.75rem;
+}
+.main .main-content > .man > li .chat {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0.3rem;
+}
+.main .main-content > .man > li .chat img {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.main .main-content > .man > li .chat p {
+  width: 4rem;
+  height: 1.5rem;
+  line-height: 0.4rem;
+  font-size: 0.28rem;
+  color: #433e3e;
+  background-color: #b7b7b7;
+  border-radius: 0.1rem;
+  padding: 0.1rem;
+  margin-left: 0.3rem;
+}
+.main-content .line {
+  width: 7.5rem;
+  height: 0.18rem;
+  background-color: #f8f8f8;
+}
+.main .main-content footer {
+  width: 7.5rem;
+  height: 1.2rem;
+  padding-top: 0.2rem;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+footer {
+  width: 7.5rem;
+  height: 4.08rem;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+footer ul > li {
+  border-bottom: 1px solid #e2e2e4;
+}
+footer ul > li > a {
+  display: block;
+  height: 1.02rem;
+  line-height: 1.02rem;
+  font-size: 0.36rem;
+  text-align: center;
+  margin: 0 auto;
+}
+footer ul > li:nth-child(1) > a,
+footer ul > li:nth-child(2) > a {
+  color: #009c7a;
+}
+footer ul > li:nth-child(3) > a {
+  color: #d83f43;
+}
+footer ul > li:nth-child(4) > a {
+  color: #868686;
+}

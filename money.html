@@ -1,0 +1,76 @@
+!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/iconfont-money.css" />
+    <link rel="stylesheet" href="./css/money.css" />
+    <title>钱包</title>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div>
+          <a href="./wode.html">
+            <img src="./images/jia-jt_03.png" alt="" />
+          </a>
+          <a href="javascript:void(0);">钱包</a>
+          <a href="./chat-choice.html">明细</a>
+        </div>
+      </header>
+      <div class="main">
+        <div class="main-content">
+          <img src="./images/money_02.png" alt="" />
+          <ul>
+            <li>
+              <span class="iconfont icon-money"></span>
+              <a href="javascript:void(0);">充值</a>
+              <div class="recharge">
+                <a href="javascript:void(0);">请输入你要充值的金额（元）</a>
+                <input type="text" />
+                <a href="">确定</a>
+              </div>
+            </li>
+            <li>
+              <span class="iconfont icon-money"></span>
+              <a href="">提现</a>
+            </li>
+          </ul>
+          <p>
+            零钱可以用于用户间收听或购买实体商品。在使用过程中，一处，不会收取任何费用
+          </p>
+        </div>
+      </div>
+      <!-- -------------------footer ---------------------------->
+      <footer>
+        <div>
+          <div>
+            <span>红包活动</span>
+            <span>常见问题</span>
+          </div>
+          <p>本服务由财付通提供底层技术支持</p>
+        </div>
+      </footer>
+      <script src="./js/zepto.min.js"></script>
+      <script src="./js/zepto-touch.js"></script>
+      <script>
+        $('.main .main-content ul li:first-child').tap(function() {
+          console.log('11');
+          $(this)
+            .find('.main .main-content ul li:first-child .recharge')
+            .css('display', 'block');
+          $(this)
+            .parents('.wrap')
+            .css('background', 'rgba(0, 0, 0, 0.3)');
+        });
+      </script>
+    </div>
+  </body>
+</html>

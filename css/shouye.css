@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-style: 12px;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.wrap {
+  position: absolute;
+  top: 0;
+  width: 7.5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 7.5rem;
+  height: 0.75rem;
+  padding: 0.45rem 0rem 0.1rem 0rem;
+  background-color: #34edcd;
+  flex-shrink: 0;
+  display: flex;
+}
+header > div {
+  flex-grow: 1;
+  width: 1rem;
+}
+header > div:nth-child(1) img {
+  float: left;
+  display: block;
+  width: 0.48rem;
+  height: 0.48rem;
+  margin: 0 0.2rem 0 0.2rem;
+}
+header > div:nth-child(1) {
+  width: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+header > div:nth-child(1) > .time span:first-child {
+  display: block;
+  font-size: 0.14rem;
+  color: #019a7b;
+  margin-bottom: 0.1rem;
+}
+header > div:nth-child(1) > .time > div {
+  display: flex;
+  justify-content: flex-start;
+}
+header > div:nth-child(1) > .time > div span {
+  color: #019a7b;
+  font-size: 0.14rem;
+  margin-bottom: 0.1rem;
+}
+header > div:nth-child(2) h1 {
+  font-size: 0.28rem;
+  color: #feffff;
+  text-align: center;
+}
+header > div:nth-child(2) p {
+  font-size: 0.1rem;
+  color: #129f7d;
+  margin-top: 0.1rem;
+  text-align: center;
+}
+header > div:nth-child(3) > a {
+  display: block;
+  height: 0.6rem;
+  background-image: url('../images/search_03.jpg');
+  background-repeat: no-repeat;
+  background-size: 0.45rem;
+  margin-left: 1.5rem;
+}
+.main {
+  width: 7.5rem;
+  overflow: auto;
+  height: calc(100% - 100px);
+}
+.main-content {
+  height: 100%;
+  width: 7.5rem;
+  overflow: auto;
+  background-color: #fff;
+}
+.main img {
+  width: 7.5rem;
+}
+.main-content .line {
+  width: 7.5rem;
+  height: 0.18rem;
+  background-color: #f8f8f8;
+}
+.main-content .list {
+  width: 7.02rem;
+  height: 1.6rem;
+  margin: 0 auto;
+  margin-top: 0.15rem;
+  border-radius: 0.1rem;
+  box-shadow: 0.001rem 0.01rem 0.3rem 0.02rem #eaeceb inset;
+  display: flex;
+}
+.main-content .list a {
+  flex-grow: 1;
+  color: #b2b2b2;
+  font-size: 0.34rem;
+  text-align: center;
+}
+.main-content .list a .iconfont {
+  font-size: 0.5rem;
+  display: block;
+  margin: 0.5rem auto;
+}
+.main-content .list-acticle {
+  width: 7.02rem;
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+}
+.main-content .list-acticle .author {
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .list-acticle .author > div:first-child span {
+  font-size: 0.18rem;
+  border-left: 0.02rem solid #28b9ac;
+  padding-left: 0.1rem;
+  color: #42bab0;
+}
+.main-content .list-acticle .author > div:last-child {
+  text-align: right;
+}
+.main-content .list-acticle .author > div:last-child span {
+  display: inline-block;
+  font-size: 0.18rem;
+  margin-right: 0.1rem;
+  color: #202020;
+}
+.main-content .list-acticle .author > div:last-child img {
+  width: 0.52rem;
+  height: 0.52rem;
+  float: right;
+  margin-top: 0.5rem;
+}
+.main-content .list-acticle .acticle {
+  display: flex;
+  margin-top: 0.42rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .list-acticle .acticle > div {
+  width: 3.5rem;
+}
+.main-content .list-acticle .acticle > div h2 {
+  font-size: 0.34rem;
+  color: #202020;
+  line-height: 0.42rem;
+}
+.main-content .list-acticle .acticle > div p {
+  font-size: 0.26rem;
+  color: #6b6b6b;
+  margin-top: 0.1rem;
+  line-height: 0.44rem;
+}
+.main-content .list-acticle .acticle img {
+  width: 2.99rem;
+  height: 1.59rem;
+  margin-top: 0.1rem;
+}
+.main-content .list-acticle .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .list-acticle .bottom > div:first-child span {
+  display: inline-block;
+  font-size: 0.1rem;
+  margin-right: -0.1rem;
+  color: #b9b9b9;
+}
+.main-content .list-acticle .bottom > div:last-child span {
+  display: inline-block;
+  font-size: 0.1rem;
+  color: #b9b9b9;
+}
+footer {
+  width: 7.5rem;
+  height: 1.2rem;
+  padding-top: 0.2rem;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+footer .navbar .list {
+  display: flex;
+}
+footer .navbar .list a {
+  text-align: center;
+  width: 1rem;
+  height: 100%;
+  flex-grow: 1;
+}
+footer .navbar {
+  border-top: 0.01rem solid #ebebeb;
+  padding-top: 0.1rem;
+}
+footer .navbar .list a:nth-child(3) .icon {
+  font-size: 0.8rem;
+  color: #38cdaf;
+  margin-bottom: 0.2rem;
+}
+.navbar .list a > span {
+  display: block;
+  margin-top: 0.1rem;
+}
+.navbar .list a > span:first-child {
+  font-size: 0.5rem;
+  height: 0.5rem;
+}
+.navbar .list a > span:last-child {
+  color: #a9a9a9;
+  font-size: 0.16rem;
+  margin-top: 0.1rem;
+  text-align: center;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/iconfont-shouye.css" />
+    <link rel="stylesheet" href="./css/iconfont-shouye-huati.css" />
+    <link rel="stylesheet" href="./css/wode.css" />
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+    <title>个人</title>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- -----------------------header------------------------ -->
+      <header>
+        <section>
+          <div class="top">
+            <a href="#">添加好友</a>
+            <a href="#">我</a>
+            <a href="#">设置</a>
+          </div>
+          <div class="middle">
+            <img src="./images/个人页_05.png" alt="" />
+            <div class="word">
+              <span>四万温泉</span>
+              <span>简介：正在努力的变得更好</span>
+            </div>
+            <img src="./images/wode-1_03.png" alt="" />
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <span>836</span>
+              <span>我的回信</span>
+            </a>
+            <a href="#">
+              <span>540</span>
+              <span>我的关注人</span>
+            </a>
+            <a href="#">
+              <span>260</span>
+              <span>关注我的人</span>
+            </a>
+          </div>
+        </section>
+      </header>
+      <!-- -----------------------main---------------------- -->
+      <div class="main">
+        <div class="list">
+          <span>我的一处</span>
+          <ul>
+            <li>
+              <img src="./images/wode-05_03.png" alt="" />
+              <span>一粒</span>
+            </li>
+            <li>
+              <img src="./images/wode-05_09.png" alt="" />
+              <span>6/12</span>
+            </li>
+            <li>
+              <img src="./images/wode-05_06.png" alt="" />
+              <span>7/15</span>
+            </li>
+          </ul>
+        </div>
+        <div class="line"></div>
+        <ul class="list-bar">
+          <li>
+            <a href="#" class="clearfix">
+              <img src="./images/个人页_03.png" alt="" />
+              <div>
+                <span>收藏</span>
+                <span>文章 歌曲 精彩回答都在这里了</span>
+                <span>32</span>
+                <img src="./images/wode-ul-bgc_03.png" alt="" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="clearfix">
+              <img src="./images/个人页_07.png" alt="" />
+              <div>
+                <span>回信</span>
+                <span>你的回答</span>
+                <span>7个</span>
+                <img src="./images/wode-ul-bgc_03.png" alt="" />
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="line"></div>
+        <ul class="list-bar">
+          <li>
+            <a href="#" class="clearfix">
+              <img src="./images/个人页_10.png" alt="" />
+              <div>
+                <span>提问</span>
+                <span>你的提问</span>
+                <span>32</span>
+                <img src="./images/wode-ul-bgc_03.png" alt="" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./money.html" class="clearfix">
+              <img src="./images/个人页_13.png" alt="" />
+              <div>
+                <span>钱包</span>
+                <span>邀请好友来拿钱</span>
+                <span>50.00</span>
+                <img src="./images/wode-ul-bgc_03.png" alt="" />
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- ---------------------------footer--------------------------- -->
+      <footer>
+        <div class="navbar">
+          <ul class="list clearfix">
+            <a href="./shouye.html">
+              <span class="iconfont icon-shouye"></span>
+              <span>首页</span>
+            </a>
+            <a href="./news.html">
+              <span class="iconfont icon-xiaoxi"></span>
+              <span>消息</span>
+            </a>
+            <a href="./jia.html">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-jiahao"></use>
+              </svg>
+            </a>
+            <a href="./topic.html">
+              <span class="iconfont icon-huati"></span>
+              <span>话题</span>
+            </a>
+            <a href="./wode.html">
+              <span class="iconfont icon-wode"></span>
+              <span>我的</span>
+            </a>
+          </ul>
+        </div>
+      </footer>
+      <!-- -------------------------script--------------------------- -->
+      <script src="./js/zepto.min.js"></script>
+      <script src="./js/zepto-touch.js"></script>
+      <script src="./js/iconfont.js"></script>
+      <script>
+        $('footer .navbar .list a').tap(function() {
+          $(this).css('color', '#3da698');
+          $(this)
+            .siblings()
+            .css('color', '#757575');
+        });
+      </script>
+    </div>
+  </body>
+</html>

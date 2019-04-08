@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-style: 12px;
+}
+/* ------------------swiper------------------- */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  /* display: -webkit-box; */
+  /* display: -ms-flexbox; */
+  /* display: -webkit-flex; */
+  /* display: flex; */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.wrap {
+  position: absolute;
+  top: 0;
+  width: 7.5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-image: url('../images/u48.png');
+  width: 7.5rem;
+  height: 1.27rem;
+  flex-shrink: 0;
+}
+header > div {
+  width: 7rem;
+  margin: 0.5rem auto;
+  display: flex;
+  justify-content: flex-start;
+}
+header > div a:first-child img {
+  display: block;
+  width: 0.35rem;
+  height: 0.35rem;
+}
+header > div a:last-child {
+  display: block;
+  font-size: 0.3rem;
+  color: #049a77;
+  margin: 0 auto;
+}
+.main {
+  width: 7.5rem;
+  overflow: auto;
+  height: calc(100% - 100px);
+}
+.main .main-content {
+  height: 100%;
+  width: 7.5rem;
+  overflow: auto;
+  background-color: #fff;
+}
+.main-content .line {
+  width: 7.5rem;
+  height: 0.18rem;
+  background-color: #f8f8f8;
+}
+.main .main-content .music-nav {
+  width: 7rem;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main .main-content .music-nav span {
+  display: block;
+  font-size: 0.18rem;
+  border-left: 0.02rem solid #049979;
+  padding-left: 0.1rem;
+  color: #049979;
+  height: 0.32rem;
+}
+.main .main-content .music-nav > a {
+  display: block;
+  color: #42bab0;
+  font-size: 0.32rem;
+}
+.main .main-content .frequency > .swiper-one .swiper-wrapper {
+  width: 7rem;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 0.3rem;
+}
+.main .main-content .frequency > .swiper-one .swiper-wrapper .swiper-slide {
+  width: 2.74rem;
+  height: 2.75rem;
+  margin-right: 0.3rem;
+}
+.main
+  .main-content
+  .frequency
+  > .swiper-one
+  .swiper-wrapper
+  .swiper-slide
+  > img {
+  display: block;
+  width: 2.74rem;
+  height: 1.2rem;
+}
+.main
+  .main-content
+  .frequency
+  > .swiper-one
+  .swiper-wrapper
+  .swiper-slide
+  > img:first-child {
+  margin-bottom: 0.4rem;
+}
+/* --------------swiper-two-------------- */
+.main .main-content .share > .swiper-two .swiper-wrapper {
+  /* width: 16.38rem; */
+}
+.main .main-content .share > .swiper-two .swiper-wrapper .swiper-slide {
+  height: 3.5rem;
+  width: 2.48rem;
+  margin-right: 0.3rem;
+}
+.main .main-content .share > .swiper-two .swiper-wrapper img {
+  display: block;
+  width: 2.48rem;
+  height: 2.44rem;
+}
+.main .main-content .share > .swiper-two .swiper-wrapper .text {
+  margin-top: 0.1rem;
+}
+.main
+  .main-content
+  .share
+  > .swiper-two
+  .swiper-wrapper
+  .text
+  > span:first-child {
+  display: block;
+  color: #4c4c4c;
+  font-size: 0.16rem;
+  line-height: 0.4rem;
+}
+.main
+  .main-content
+  .share
+  > .swiper-two
+  .swiper-wrapper
+  .text
+  > span:last-child {
+  display: block;
+  color: #b6b6b6;
+  font-size: 0.14rem;
+}
+/* ----------------------- */
+.main .main-content .magazine {
+  width: 7rem;
+  margin: 0 auto;
+}
+.main .main-content .magazine .pic {
+  display: flex;
+  justify-content: space-between;
+}
+.main .main-content .magazine .pic img {
+  width: 3.34rem;
+  height: 3rem;
+}

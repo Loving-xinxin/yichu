@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/iconfont-shouye.css" />
+    <link rel="stylesheet" href="./css/iconfont-shouye-huati.css" />
+    <link rel="stylesheet" href="./css/shouye.css" />
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+    <title>首页</title>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- -----------------------header------------------------ -->
+      <header>
+        <div>
+          <img src="./images/shouye-sun_05.png" alt="" />
+          <div class="time">
+            <span>PM</span>
+            <div>
+              <span class="hour">00</span>
+              <span>:</span>
+              <span class="minute">00</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1>一处</h1>
+          <p>ONEPLACE</p>
+        </div>
+        <div>
+          <a href="search.html"></a>
+        </div>
+      </header>
+      <!-- -------------------------main------------------------------ -->
+      <div class="main">
+        <img src="./images/u153_02.jpg" alt="" />
+        <div class="main-content">
+          <div class="list">
+            <a href="./music.html">
+              <span class="iconfont icon-yinyue"></span>
+            </a>
+            <a href="#">
+              <span class="iconfont icon-bofangsanjiaoxing"><span>
+            </a>
+            <a href="./article.html">
+              <span class="iconfont icon-wenzhang1"></span>
+            </a>
+            <a href="./radio.html">
+              <span class="iconfont icon-shumatubiaozhizuochunsezhuanqu-"></span>
+            </a>
+            <a href="./ranking.html">
+              <span class="iconfont icon-paihangbang"></span>
+            </a>
+          </div>
+        <a href="./content.html">
+            <div class="list-acticle">
+              <div class="author">
+                <div><span>浮世绘</span></div>
+                <div><span>一处精选</span><img src="./images/u15123_05.jpg" alt=""></div>
+              </div>
+              <div class="acticle">
+                <div>
+                  <h2>老了又怎样，又不耽误好好活着</h2>
+                  <p>1《奇葩说》第四季的问题是：“如果你的父母提出和”</p>
+                </div>
+                <img src="./images/u1531_05.jpg" alt="">
+              </div>
+              <div class="bottom">
+                <div>
+                  <span>05-20</span>
+                  <span>20:56</span>
+                </div>
+                <div>
+                  <span><span class="iconfont icon-icon-"></span>1.8K</span>
+                  <span><span class="iconfont icon-xihuan2"></span>112</span>
+                  <span><span class="iconfont icon-xinxi"></span>7</span>
+                </div>
+              </div>
+            </div>
+        </a>
+          <div class="line"></div>
+         <a href="./content.html">
+            <div class="list-acticle">
+              <div class="author">
+                <div><span>浮世绘</span></div>
+                <div><span>毛毛</span><img src="./images/u153111_13.jpg" alt=""></div>
+              </div>
+              <div class="acticle">
+                <div>
+                  <h2>我更喜欢努力的自己</h2>
+                  <p>你知道，故事的结尾并不重要，生活唯一确保我们的就是光芒。</p>
+                </div>
+                <img src="./images/u1513_09.jpg" alt="">
+              </div>
+              <div class="bottom">
+                <div>
+                  <span>05-20</span>
+                  <span>20:56</span>
+                </div>
+                <div>
+                  <span><span class="iconfont icon-icon-"></span>1.6K</span>
+                  <span><span class="iconfont icon-xihuan2"></span>1332</span>
+                  <span><span class="iconfont icon-xinxi"></span>9</span>
+                </div>
+              </div>
+            </div>
+         </a>
+        </div>
+      </div>
+      <!-- ---------------------------footer--------------------------- -->
+      <footer>
+        <div class="navbar">
+          <ul class="list clearfix">
+            <a href="./shouye.html">
+              <span class="iconfont icon-shouye"></span>
+              <span>首页</span>
+            </a>
+            <a href="./news.html"> 
+              <span class="iconfont icon-xiaoxi"></span>
+              <span>消息</span>
+            </a>
+            <a href="./jia.html">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-jiahao"></use>
+              </svg>
+            </a>
+            <a class="./topic.html">
+              <span class="iconfont icon-huati"></span>
+              <span>话题</span>
+            </a>
+            <a class="./wode.html">
+              <span class="iconfont icon-wode"></span>
+              <span>我的</span>
+            </a>
+          </ul>
+        </div>
+      </footer>
+      <!-- -------------------------script--------------------------- -->
+      <script src="./js/zepto.min.js"></script>
+      <script src="./js/zepto-touch.js"></script>
+      <script src="./js/iconfont.js"></script>
+      <script>
+        $('footer .navbar .list a').tap(function() {
+          $(this).css('color', '#3da698');
+          $(this)
+            .siblings()
+            .css('color', '#757575');
+        });
+        // ---------time--------
+        function run() {
+            var date = new Date();
+            var hour = date.getHours();
+            if (hour < 10) {
+              hour = '0' + hour;
+            }
+            $('.hour').text(hour);
+            var minute = date.getMinutes();
+            if (minute < 10) {
+              minute = '0' + minute;
+            }
+            $('.minute').text(minute);
+            var second = date.getSeconds();
+            if (second < 10) {
+              second = '0' + second;
+            }
+            $('.second').text(second);
+          }
+          //2.上来就调用run这个函数
+          run();
+          //3.每过1s,执行run
+
+          //   setInterval(function() {
+          //     run();
+          //   }, 1000);
+
+          setInterval(run, 1000);
+      </script>
+    </div>
+  </body>
+</html>

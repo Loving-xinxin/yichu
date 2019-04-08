@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/iconfont-shouye.css" />
+    <link rel="stylesheet" href="./css/iconfont-shouye-huati.css" />
+    <link rel="stylesheet" href="./css/jia.css" />
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+    <title>发表</title>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- -----------------------header------------------------ -->
+      <header>
+        <div>
+          <a href="./shouye.html">
+            <img src="./images/jia-jt_03.png" alt="" />
+          </a>
+          <a href="#">公开发布</a>
+        </div>
+      </header>
+      <!-- -------------------------main------------------------------ -->
+      <div class="main">
+        <div class="main-content">
+          <div class="word">
+            <span>“我一直在这里，等风也等你。”</span>
+            <span>一处</span>
+          </div>
+          <div class="comment">
+            <textarea name="" id="" cols="30" rows="10" class="show">
+学习学到忘记看手机，这种感觉超爽拿起手机发现时间才过两分钟，惆怅
+            </textarea>
+            <a href="#">公开</a>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------script----------------------- -->
+
+      <script src="./js/zepto.min.js"></script>
+      <script src="./js/zepto-touch.js"></script>
+      <script src="./js/iconfont.js"></script>
+      <script>
+        $('footer .navbar .list a').tap(function() {
+          $(this).css('color', '#3da698');
+          $(this)
+            .siblings()
+            .css('color', '#757575');
+        });
+        $('.main .main-content .comment a').tap(function() {
+          console.log('222');
+          var txt = $('.show').val(' ');
+        });
+      </script>
+    </div>
+  </body>
+</html>

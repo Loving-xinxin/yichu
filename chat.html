@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/iconfont-chat.css" />
+    <link rel="stylesheet" href="./css/chat.css" />
+    <title>进入聊天</title>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <div>
+          <a href="./news.html">
+            <img src="./images/jia-jt_03.png" alt="" />
+          </a>
+          <a href="javascript:void(0);">yaourtniyun</a>
+          <a href="./chat-choice.html">...</a>
+        </div>
+      </header>
+      <div class="main">
+        <div class="main-content">
+          <ul class="man">
+            <li>
+              <span>32分钟前</span>
+              <div class="chat">
+                <img src="./images/chating-tx_03.png" alt="" />
+                <p>
+                  我喜欢了一个姑娘4年
+                  她现在有对象我应不应该打破她现有的平稳生活去追求她
+                </p>
+              </div>
+            </li>
+          </ul>
+          <!-- <ul class="women">
+            <li>
+              <span>32分钟前</span>
+              <div class="word">
+                <p></p>
+                <img src="./images/chating-6_03.png" alt="" />
+              </div>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+      <!-- -------------------footer ---------------------------->
+      <footer>
+        <div>
+          <span class="iconfont icon-jia"></span>
+          <span class="iconfont icon-smile"></span>
+          <input type="text" placeholder="新信息" />
+          <a href="javascript:void(0);">语音</a>
+        </div>
+      </footer>
+      <script src="./js/zepto.min.js"></script>
+      <script src="./js/zepto-touch.js"></script>
+      <script>
+        $('footer>div a').tap(function() {
+          var txt = $('footer>div input').val();
+          // console.log(txt);
+          if (txt.trim()) {
+            var ul = $(`<ul class="women">`);
+            var li = $(`<li>
+              <span>32分钟前</span>
+              <div class="word">
+                <img src="./images/chating-tx_03.png" alt="" />
+                <p>${txt}</p>
+              </div>
+            </li>`);
+            // $('li .word p').text(txt);
+            ul.appendTo('.main-content');
+            ul.append(li);
+            $('footer input').val('');
+          }
+        });
+      </script>
+    </div>
+  </body>
+</html>

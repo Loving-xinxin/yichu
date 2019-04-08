@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://www.swiper.com.cn/demo/010-default.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>index</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./Swiper demo_files/swiper.min.css" />
+    <!-- Demo styles -->
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+    <style>
+      html {
+        font-size: 12px;
+      }
+      body {
+        position: relative;
+        height: 100%;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        width: 7.5rem;
+        overflow: auto;
+        height: calc(100% - 0px);
+      }
+      .main-content {
+        height: 100%;
+        width: 7.5rem;
+        overflow: auto;
+        background-color: #fff;
+      }
+      .swiper-container {
+        width: 7.5rem;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        position: relative;
+      }
+      .swiper-slide img {
+        width: 7.5rem;
+        height: 100%;
+      }
+      .swiper-slide a {
+        position: absolute;
+        right: 0.5rem;
+        top: 4%;
+        padding: 0.15rem 0.25rem;
+      }
+      .swiper-slide:last-child a {
+        position: absolute;
+        right: 2.8rem;
+        top: 72.5%;
+        padding: 0.25rem 0.85rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Swiper -->
+    <div class="wrap">
+      <div class="main">
+        <div class="main-content">
+          <div
+            class="swiper-container swiper-container-initialized swiper-container-horizontal"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/u5.jpg" alt="" />
+                <a href="./shouye.html"></a>
+              </div>
+              <div class="swiper-slide swiper-slide-prev">
+                <img src="./images/u7.jpg" alt="" />
+                <a href="./shouye.html"></a>
+              </div>
+              <div class="swiper-slide swiper-slide-active">
+                <img src="./images/u9.jpg" alt="" />
+                <a href="./shouye.html"></a>
+              </div>
+              <div class="swiper-slide swiper-slide-active">
+                <img src="./images/u11.jpg" alt="" />
+                <a href="./login.html"></a>
+              </div>
+            </div>
+            <span
+              class="swiper-notification"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="./Swiper demo_files/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container');
+    </script>
+  </body>
+</html>

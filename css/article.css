@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-style: 12px;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.wrap {
+  position: absolute;
+  top: 0;
+  width: 7.5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-image: url('../images/u48.png');
+  width: 7.5rem;
+  height: 1.27rem;
+  flex-shrink: 0;
+}
+header > div {
+  width: 7rem;
+  margin: 0.5rem auto;
+  display: flex;
+  justify-content: flex-start;
+}
+header > div a:first-child img {
+  display: block;
+  width: 0.35rem;
+  height: 0.35rem;
+}
+header > div a:last-child {
+  display: block;
+  font-size: 0.3rem;
+  color: #049a77;
+  margin: 0 auto;
+}
+.main {
+  width: 7.5rem;
+  height: 100%;
+  overflow: auto;
+  height: calc(100% - 100px);
+}
+.main .main-content {
+  height: 100%;
+  width: 7.5rem;
+  overflow: auto;
+  background-color: #fff;
+}
+.main-content .line {
+  width: 7.5rem;
+  height: 0.18rem;
+  background-color: #f8f8f8;
+}
+.main .main-content .article-nav {
+  width: 7rem;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main .main-content .article-nav span {
+  display: block;
+  font-size: 0.18rem;
+  border-left: 0.02rem solid #049979;
+  padding-left: 0.1rem;
+  color: #049979;
+  height: 0.32rem;
+}
+.main .main-content .article-nav > a {
+  display: block;
+  color: #42bab0;
+  font-size: 0.32rem;
+}
+.main .main-content .pic {
+  display: flex;
+}
+.main .main-content .pic > div img {
+  display: inline-block;
+  width: 2.46rem;
+  height: 1.88rem;
+}
+
+.main-content .list {
+  padding-top: 0.4rem;
+  width: 7rem;
+  height: 2rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .list img {
+  width: 1.86rem;
+  height: 1.76rem;
+  margin-right: 0.3rem;
+  float: left;
+}
+.main-content .list .word {
+  width: 5rem;
+}
+.main-content .list span:first-child {
+  display: block;
+  font-size: 0.3rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: #212121;
+}
+.main-content .list span:last-child {
+  display: block;
+  font-size: 0.1rem;
+  color: #212121;
+}
+.main-content .list .article-icon {
+  width: 3rem;
+  margin: 0 0 0rem 2.09rem;
+}
+.main-content .list .article-icon span {
+  display: inline-block;
+  font-size: 0.1rem;
+  color: #b9b9b9;
+}
+
+footer {
+  width: 7.5rem;
+  height: 1.2rem;
+  padding-top: 0.2rem;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+footer .navbar .list {
+  display: flex;
+}
+footer .navbar .list a {
+  text-align: center;
+  width: 1rem;
+  height: 100%;
+  flex-grow: 1;
+}
+footer .navbar {
+  border-top: 0.01rem solid #ebebeb;
+  padding-top: 0.1rem;
+}
+footer .navbar .list a:nth-child(3) .icon {
+  font-size: 0.8rem;
+  color: #38cdaf;
+  margin-bottom: 0.2rem;
+}
+.navbar .list a > span {
+  display: block;
+  margin-top: 0.1rem;
+}
+.navbar .list a > span:first-child {
+  font-size: 0.5rem;
+  height: 0.5rem;
+}
+.navbar .list a > span:last-child {
+  color: #a9a9a9;
+  font-size: 0.16rem;
+  margin-top: 0.1rem;
+  text-align: center;
+}

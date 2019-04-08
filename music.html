@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./Swiper demo_files/swiper.min.css" />
+    <link rel="stylesheet" href="./css/iconfont-shouye.css" />
+    <link rel="stylesheet" href="./css/iconfont-shouye-huati.css" />
+    <link rel="stylesheet" href="./css/music.css" />
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+    <title>音乐</title>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- -----------------------header------------------------ -->
+      <header>
+        <div>
+          <a href="./shouye.html">
+            <img src="./images/jia-jt_03.png" alt="" />
+          </a>
+          <a href="#">音乐</a>
+        </div>
+      </header>
+      <!-- -------------------------main------------------------------ -->
+      <div class="main">
+        <div class="main-content">
+          <div class="frequency">
+            <div class="music-nav">
+              <span>音乐频道</span>
+              <a>...</a>
+            </div>
+            <div
+              class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-free-mode swiper-one"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-active">
+                  <img src="./images/music-01_03.png" alt="" />
+                  <img src="./images/music-01_10.png" alt="" />
+                </div>
+                <div class="swiper-slide swiper-slide-next">
+                  <img src="./images/music-01_05.png" alt="" />
+                  <img src="./images/music-01_12.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/music-01_03.png" alt="" />
+                  <img src="./images/music-01_10.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/music-01_05.png" alt="" />
+                  <img src="./images/music-01_12.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/music-01_03.png" alt="" />
+                  <img src="./images/music-01_10.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/music-01_05.png" alt="" />
+                  <img src="./images/music-01_12.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="share">
+            <div class="music-nav">
+              <span>热门分享</span>
+              <a>...</a>
+            </div>
+            <div
+              class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-free-mode swiper-two"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-active">
+                  <a href="./music-song.html">
+                    <img src="./images/music-01_16.png" alt="" />
+                    <div class="text">
+                      <span>心之所向，无往不至</span>
+                      <span>分享： 许邻</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide-next">
+                  <a href="./music-song.html">
+                    <img src="./images/music-01_18.png" alt="" />
+                    <div class="text">
+                      <span>（每日推荐）Reforget</span>
+                      <span>分享： if帷</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./music-song.html">
+                    <img src="./images/music-01_16.png" alt="" />
+                    <div class="text">
+                      <span>今日推荐</span>
+                      <span>分享： 花粥</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./music-song.html">
+                    <img src="./images/music-01_18.png" alt="" />
+                    <div class="text">
+                      <span>你今天pink了吗</span>
+                      <span>分享： 才子华</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./music-song.html">
+                    <img src="./images/music-01_16.png" alt="" />
+                    <div class="text">
+                      <span>今日推荐</span>
+                      <span>分享： if帷</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./music-song.html">
+                    <img src="./images/music-01_18.png" alt="" />
+                    <div class="text">
+                      <span>想三旬</span>
+                      <span>分享： 笑笑</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="magazine">
+            <div class="music-nav">
+              <span>音乐杂志</span>
+              <a>...</a>
+            </div>
+            <div class="pic">
+              <img src="./images/个人页11_03.png" alt="" />
+              <img src="./images/个人页11_08.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------script--------------------------- -->
+      <script src="./js/zepto.min.js"></script>
+      <script src="./js/zepto-touch.js"></script>
+      <script src="./js/iconfont.js"></script>
+      <script src="./Swiper demo_files/swiper.min.js"></script>
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          //   slidesPerView: 3,
+          //   spaceBetween: 30,
+          freeMode: true
+        });
+        $('.main .main-content .frequency .swiper-wrapper .swiper-slide').css(
+          'width',
+          '2.74rem'
+        );
+        $('.main .main-content .share .swiper-wrapper .swiper-slide').css(
+          'width',
+          '2.74rem'
+        );
+      </script>
+    </div>
+  </body>
+</html>

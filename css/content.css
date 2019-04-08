@@ -1,0 +1,108 @@
+html {
+  font-style: 12px;
+}
+.wrap {
+  width: 7.5rem;
+  height: 100%;
+}
+header {
+  width: 7.5rem;
+  height: 6rem;
+  background-image: url('../images/content_01.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+header > div {
+  width: 7rem;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+header > div a:first-child img {
+  display: block;
+  width: 0.35rem;
+  height: 0.35rem;
+}
+header > div a:last-child {
+  display: block;
+  width: 0.8rem;
+  line-height: 0.45rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  border: 0.01rem solid #4fa59c;
+  font-size: 0.2rem;
+  color: #fbfbfd;
+  margin-top: -0.2rem;
+}
+.main-content .article {
+  width: 7.02rem;
+  margin: -0.6rem auto;
+}
+.main-content .article .author {
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .article .author > div:first-child span {
+  font-size: 0.18rem;
+  border-left: 0.02rem solid #28b9ac;
+  padding-left: 0.1rem;
+  color: #42bab0;
+}
+.main-content .article .author > div:last-child {
+  width: 3rem;
+  height: 1.2rem;
+}
+.main-content .article .author > div:last-child img {
+  display: block;
+  width: 1.42rem;
+  height: 1.42rem;
+  margin: -0.5rem 0 0 1.3rem;
+}
+.main-content .article .author > div:last-child span {
+  display: block;
+  font-size: 0.18rem;
+  margin: 0.2rem 0 0 1.78rem;
+  color: #059979;
+}
+.main-content .article .text h3 {
+  width: 3.75rem;
+  color: #4d4d4d;
+  font-size: 0.52rem;
+  line-height: 0.6rem;
+}
+.main-content .article .text span {
+  display: block;
+  color: #b1b1b1;
+  font-size: 0.12rem;
+  margin: 0.3rem 0 0.3rem 0;
+}
+.main-content .article .text p {
+  color: #6b6b6b;
+  font-size: 0.28rem;
+  width: 6rem;
+  line-height: 0.4rem;
+}
+.main-content .view {
+  width: 7.5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+.main-content .view > div {
+  width: 0.75rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .view > div > img {
+  display: block;
+  width: 0.39rem;
+  height: 0.37rem;
+}
+.main-content .view > div > span {
+  color: #5fbea8;
+  font-size: 0.12rem;
+  margin: 0.1rem 0 0 0.1rem;
+}

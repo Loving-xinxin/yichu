@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-style: 12px;
+}
+.wrap {
+  position: absolute;
+  top: 0;
+  width: 7.5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/hkhd.jpg);
+}
+
+header {
+  width: 7.5rem;
+  height: 0.75rem;
+  padding: 0.45rem 0rem 0.1rem 0rem;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+}
+header span:first-child {
+  position: absolute;
+  left: 0.4rem;
+  top: 0.7rem;
+  font-size: 0.36rem;
+  color: #a7a7a7;
+}
+header input {
+  width: 5rem;
+  border-radius: 0.1rem;
+  margin-left: 0.2rem;
+  background-color: #ececec;
+  outline: none;
+  border: none;
+  border: 0.01rem solid #ececec;
+  padding-left: 0.7rem;
+}
+header input[type='text']:focus,
+select:focus {
+  border: 0.03rem solid #219b8c;
+  outline: none;
+}
+header a:nth-child(3) {
+  display: block;
+  color: #a6d2d3;
+  font-size: 0.3rem;
+  text-align: center;
+  margin: 0.3rem auto;
+  padding-left: -0.3rem;
+}
+main {
+  width: 7.5rem;
+  overflow: auto;
+  height: calc(100% - 100px);
+}
+
+main .main-content {
+  width: 7rem;
+  overflow: auto;
+  margin: 0 auto;
+}
+main .main-content > div {
+  display: flex;
+  margin-top: 0.22rem;
+}
+main .main-content > div a {
+  display: block;
+  flex-grow: 1;
+  width: 1.2rem;
+  line-height: 0.75rem;
+  border-radius: 0.1rem;
+  text-align: center;
+}
+main .main-content > div a:first-child {
+  background-color: #35efca;
+  color: #f5fffe;
+  font-size: 0.22rem;
+  margin-right: 0.1rem;
+}
+main .main-content > div a:last-child {
+  background-color: #f7fbfa;
+  color: #a3a5a4;
+  font-size: 0.22rem;
+}
+main > ul li {
+  display: flex;
+  justify-content: space-between;
+}
+main > ul li a {
+  width: 7rem;
+  height: 0.96rem;
+  display: inline-block;
+  color: #b5d5d2;
+  font-size: 0.3rem;
+  padding-left: 0.5rem;
+  text-align: left;
+  margin-top: 0.45rem;
+  margin-left: 0.3rem;
+}
+main > ul li {
+  position: relative;
+  border-bottom: 0.01rem solid #74b1ac;
+}
+main > ul li span {
+  position: absolute;
+  left: 0.4rem;
+  top: 0.4rem;
+  color: #b5d5d4;
+}

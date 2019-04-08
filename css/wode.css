@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-style: 12px;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.wrap {
+  position: absolute;
+  top: 0;
+  width: 7.5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  width: 7.5rem;
+  background-image: url('../images/个人页-bg_02.png');
+  height: 4.2rem;
+  border-radius: 0 0 0.45rem 0.45rem;
+  padding: 0.45rem 0rem 0.1rem 0rem;
+  flex-shrink: 0;
+  display: flex;
+  box-shadow: 0.1rem 0.1rem 1rem 0.05rem #daedeb;
+}
+header section .top {
+  width: 7.2rem;
+  margin: 0 auto;
+  margin-top: 0.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+header section .top a {
+  margin-right: 0.5rem;
+  font-size: 0.32rem;
+  color: #e7fbfc;
+}
+header section .top a:last-child {
+  margin-right: 0rem;
+}
+header section .middle {
+  width: 7rem;
+  margin-left: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.54rem;
+}
+header section .middle img:nth-child(1) {
+  width: 1.24rem;
+  height: 1.24rem;
+  margin-right: 0.35rem;
+}
+header section .middle img:nth-child(3) {
+  width: 1.12rem;
+  height: 0.55rem;
+  margin-top: 0.3rem;
+}
+header section .middle .word {
+  margin: 0.25rem 0.7rem 0 0;
+}
+header section .middle .word span:first-child {
+  display: block;
+  font-size: 0.28rem;
+  font-weight: lighter;
+  color: #fefffd;
+  margin-bottom: 0.3rem;
+}
+header section .middle .word span:last-child {
+  display: block;
+  font-size: 0.2rem;
+  color: #06b0a3;
+}
+header section .bottom {
+  display: flex;
+  justify-content: space-around;
+  width: 5.9rem;
+  margin: 0 auto;
+  margin-top: 0.6rem;
+}
+header section .bottom a {
+  text-align: center;
+}
+header section .bottom a > span:first-child {
+  display: block;
+  font-size: 0.3rem;
+  color: #fcffff;
+  margin-bottom: 0.1rem;
+}
+header section .bottom a > span:last-child {
+  display: block;
+  font-size: 0.14rem;
+  color: #cefcfa;
+}
+.main {
+  width: 7.5rem;
+  overflow: auto;
+  height: calc(100% - 100px);
+}
+.main-content {
+  height: 100%;
+  width: 7.5rem;
+  overflow: auto;
+  background-color: #fff;
+}
+.main .list {
+  margin-top: 0.5rem;
+  width: 6.9rem;
+  margin: 0 auto;
+  padding-bottom: 0.24rem;
+}
+.main .list span:first-child {
+  color: #404040;
+  font-size: 0.34rem;
+}
+.main .list ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+.main .list ul > li > span {
+  display: block;
+  color: #606060;
+  font-size: 0.28rem;
+  margin-top: 0.14rem;
+}
+.main .list ul > li + li {
+  margin-left: 0.3rem;
+}
+.main .list ul > li img {
+  display: block;
+  width: 2.04rem;
+  height: 2.1rem;
+}
+.main .list ul > li:last-child img {
+  border: 1px solid #9f9f9f;
+}
+.main .line {
+  width: 7.5rem;
+  height: 0.18rem;
+  background-color: #f8f8f8;
+}
+.main .list-bar {
+  width: 7.2rem;
+  margin-left: 0.3rem;
+}
+.main .list-bar > li {
+  border-bottom: 1px solid #e5e4e9;
+  padding-bottom: 0.2rem;
+}
+.main .list-bar > li:last-child {
+  margin-top: -0.1rem;
+}
+.main .list-bar > li a img {
+  display: inline-block;
+  width: 0.42rem;
+  height: 0.42rem;
+  margin-top: 0.5rem;
+  float: left;
+}
+.main .list-bar > li > a > div {
+  position: relative;
+  margin: 0 0 0.1rem 0.6rem;
+}
+.main .list-bar > li > a > div span {
+  font-size: 0.28rem;
+  color: #919191;
+}
+.main .list-bar > li a > div span:nth-child(1) {
+  font-size: 0.3rem;
+  font-weight: bold;
+  color: #292929;
+}
+.main .list-bar > li a > div span:nth-child(3) {
+  float: right;
+  margin: 0.65rem 0.8rem 0 0;
+}
+.main .list-bar > li a > div img:nth-child(4) {
+  display: block;
+  width: 0.11rem;
+  height: 0.2rem;
+  position: absolute;
+  right: 0.4rem;
+  top: 0.21rem;
+}
+footer {
+  width: 7.5rem;
+  height: 1.2rem;
+  padding-top: 0.2rem;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+footer .navbar .list {
+  display: flex;
+}
+footer .navbar .list a {
+  text-align: center;
+  width: 1rem;
+  height: 100%;
+  flex-grow: 1;
+}
+footer .navbar {
+  border-top: 0.01rem solid #ebebeb;
+  padding-top: 0.1rem;
+}
+footer .navbar .list a:nth-child(3) .icon {
+  font-size: 0.8rem;
+  color: #38cdaf;
+  margin-bottom: 0.2rem;
+}
+.navbar .list a > span {
+  display: block;
+  margin-top: 0.1rem;
+}
+.navbar .list a > span:first-child {
+  font-size: 0.5rem;
+  height: 0.5rem;
+}
+.navbar .list a > span:last-child {
+  color: #a9a9a9;
+  font-size: 0.16rem;
+  margin-top: 0.1rem;
+  text-align: center;
+}

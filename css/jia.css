@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-style: 12px;
+}
+.wrap {
+  position: absolute;
+  top: 0;
+  width: 7.5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-image: url('../images/u48.png');
+  width: 7.5rem;
+  height: 1.27rem;
+  flex-shrink: 0;
+}
+header > div {
+  width: 7rem;
+  margin: 0.5rem auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+header > div a:first-child img {
+  display: block;
+  width: 0.35rem;
+  height: 0.35rem;
+}
+header > div a:last-child {
+  display: block;
+  padding: 0.2rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  border: 0.03rem solid #17b999;
+  font-size: 0.2rem;
+  color: #059979;
+  margin-top: -0.2rem;
+}
+.main {
+  width: 7.5rem;
+  overflow: auto;
+  height: calc(100% - 100px);
+}
+.main .main-content {
+  height: 100%;
+  width: 7.5rem;
+  overflow: auto;
+  background-color: #fff;
+}
+.main .main-content .word {
+  padding-top: 1.5rem;
+}
+.main .main-content .word span:first-child {
+  display: block;
+  color: #059979;
+  font-size: 0.36rem;
+  margin-left: 1rem;
+}
+.main .main-content .word span:last-child {
+  display: block;
+  color: #059979;
+  font-size: 0.28rem;
+  margin-left: 5.5rem;
+  margin-top: 0.4rem;
+}
+.main .main-content .comment {
+  width: 7rem;
+  margin: 0.2rem auto;
+}
+.main .main-content .comment .show {
+  line-height: 0.5rem;
+  font-size: 0.26rem;
+  color: #202020;
+  display: block;
+  margin: 0 auto;
+  resize: none;
+  width: 6.87rem;
+  height: 6.84rem;
+  background-color: #cdebe4;
+  border: 0.01rem solid #cdebe4;
+  outline: none;
+}
+.main .main-content .comment a {
+  display: block;
+  text-align: center;
+  width: 1rem;
+  line-height: 0.44rem;
+  border-radius: 0.15rem;
+  border: 0.03rem solid #17b999;
+  font-size: 0.2rem;
+  color: #059979;
+  float: right;
+  right: 0;
+  margin-top: 0.3rem;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+footer {
+  width: 7.5rem;
+  height: 1.2rem;
+  padding-top: 0.2rem;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+footer .navbar .list {
+  display: flex;
+}
+footer .navbar .list a {
+  text-align: center;
+  width: 1rem;
+  height: 100%;
+  flex-grow: 1;
+}
+footer .navbar {
+  border-top: 0.01rem solid #ebebeb;
+  padding-top: 0.1rem;
+}
+footer .navbar .list a:nth-child(3) .icon {
+  font-size: 0.8rem;
+  color: #38cdaf;
+  margin-bottom: 0.2rem;
+}
+.navbar .list a > span {
+  display: block;
+  margin-top: 0.1rem;
+}
+.navbar .list a > span:first-child {
+  font-size: 0.5rem;
+  height: 0.5rem;
+}
+.navbar .list a > span:last-child {
+  color: #a9a9a9;
+  font-size: 0.16rem;
+  margin-top: 0.1rem;
+  text-align: center;
+}
