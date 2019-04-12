@@ -36,6 +36,19 @@ html {
   width: 7rem;
   margin: 0.5rem auto;
 }
+.main .main-content .text .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.main .main-content .text .author .much {
+  border: none;
+}
+.main .main-content .text .icon {
+  display: inline-block;
+  font-size: 0.1rem;
+  color: #b9b9b9;
+  margin-top: 0.1rem;
+}
 .main .main-content .list .author {
   display: flex;
   justify-content: space-between;
